@@ -11,12 +11,13 @@ class WorkoutListViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .brown
+        view.backgroundColor = .gray
         setupNavBar()
     }
 
     @objc private func addNewWorkout() {
-        
+        let newWorkoutVC = NewWorkoutViewController()
+        present(newWorkoutVC, animated: true)
     }
 
 }
@@ -29,7 +30,7 @@ private extension WorkoutListViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
         
         let navBarAppearance = UINavigationBarAppearance()
-        navBarAppearance.backgroundColor = .brown
+        navBarAppearance.backgroundColor = UIColor(named: "Teal")
         
         navBarAppearance.titleTextAttributes = [.foregroundColor: UIColor.white]
         navBarAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]

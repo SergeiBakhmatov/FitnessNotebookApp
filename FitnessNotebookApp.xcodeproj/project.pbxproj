@@ -13,6 +13,9 @@
 		77C0D2DC2A6AA0920015529B /* FitnessNotebookApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 77C0D2DA2A6AA0920015529B /* FitnessNotebookApp.xcdatamodeld */; };
 		77C0D2DE2A6AA0930015529B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77C0D2DD2A6AA0930015529B /* Assets.xcassets */; };
 		77C0D2E12A6AA0930015529B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77C0D2DF2A6AA0930015529B /* LaunchScreen.storyboard */; };
+		77E367C02A6BB2D700DD0E76 /* ExerciseListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E367BF2A6BB2D700DD0E76 /* ExerciseListViewController.swift */; };
+		77E367C22A6BB4A500DD0E76 /* NewWorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E367C12A6BB4A500DD0E76 /* NewWorkoutViewController.swift */; };
+		77E367C52A6BDA9E00DD0E76 /* FilledButtonFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E367C42A6BDA9E00DD0E76 /* FilledButtonFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		77C0D2DD2A6AA0930015529B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77C0D2E02A6AA0930015529B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		77C0D2E22A6AA0930015529B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77E367BF2A6BB2D700DD0E76 /* ExerciseListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseListViewController.swift; sourceTree = "<group>"; };
+		77E367C12A6BB4A500DD0E76 /* NewWorkoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWorkoutViewController.swift; sourceTree = "<group>"; };
+		77E367C42A6BDA9E00DD0E76 /* FilledButtonFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilledButtonFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,7 @@
 				77C0D2EA2A6AA1A30015529B /* App */,
 				77C0D2EC2A6AA3ED0015529B /* WorkoutList */,
 				77C0D2E82A6AA1730015529B /* Models */,
+				77E367C32A6BDA6F00DD0E76 /* Factories */,
 				77C0D2ED2A6AA8300015529B /* Services */,
 				77C0D2EB2A6AA1B80015529B /* Storyboard */,
 				77C0D2E92A6AA1870015529B /* Resources */,
@@ -104,6 +111,8 @@
 			isa = PBXGroup;
 			children = (
 				77C0D2D52A6AA0920015529B /* WorkoutListViewController.swift */,
+				77E367BF2A6BB2D700DD0E76 /* ExerciseListViewController.swift */,
+				77E367C12A6BB4A500DD0E76 /* NewWorkoutViewController.swift */,
 			);
 			path = WorkoutList;
 			sourceTree = "<group>";
@@ -113,6 +122,14 @@
 			children = (
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		77E367C32A6BDA6F00DD0E76 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				77E367C42A6BDA9E00DD0E76 /* FilledButtonFactory.swift */,
+			);
+			path = Factories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,10 +202,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77E367C22A6BB4A500DD0E76 /* NewWorkoutViewController.swift in Sources */,
+				77E367C02A6BB2D700DD0E76 /* ExerciseListViewController.swift in Sources */,
 				77C0D2D62A6AA0920015529B /* WorkoutListViewController.swift in Sources */,
 				77C0D2DC2A6AA0920015529B /* FitnessNotebookApp.xcdatamodeld in Sources */,
 				77C0D2D22A6AA0920015529B /* AppDelegate.swift in Sources */,
 				77C0D2D42A6AA0920015529B /* SceneDelegate.swift in Sources */,
+				77E367C52A6BDA9E00DD0E76 /* FilledButtonFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +353,7 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
@@ -365,6 +386,7 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
