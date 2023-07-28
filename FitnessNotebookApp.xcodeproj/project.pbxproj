@@ -16,6 +16,8 @@
 		77E367C02A6BB2D700DD0E76 /* ExerciseListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E367BF2A6BB2D700DD0E76 /* ExerciseListViewController.swift */; };
 		77E367C22A6BB4A500DD0E76 /* NewWorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E367C12A6BB4A500DD0E76 /* NewWorkoutViewController.swift */; };
 		77E367C52A6BDA9E00DD0E76 /* FilledButtonFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E367C42A6BDA9E00DD0E76 /* FilledButtonFactory.swift */; };
+		77EE0E2E2A73A181009F5E91 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EE0E2D2A73A181009F5E91 /* TestViewController.swift */; };
+		77EE0E302A73C4EE009F5E91 /* Mok.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EE0E2F2A73C4EE009F5E91 /* Mok.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		77E367BF2A6BB2D700DD0E76 /* ExerciseListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseListViewController.swift; sourceTree = "<group>"; };
 		77E367C12A6BB4A500DD0E76 /* NewWorkoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWorkoutViewController.swift; sourceTree = "<group>"; };
 		77E367C42A6BDA9E00DD0E76 /* FilledButtonFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilledButtonFactory.swift; sourceTree = "<group>"; };
+		77EE0E2D2A73A181009F5E91 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		77EE0E2F2A73C4EE009F5E91 /* Mok.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mok.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,7 @@
 		77C0D2E82A6AA1730015529B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				77EE0E2F2A73C4EE009F5E91 /* Mok.swift */,
 				77C0D2DA2A6AA0920015529B /* FitnessNotebookApp.xcdatamodeld */,
 			);
 			path = Models;
@@ -110,6 +115,7 @@
 		77C0D2EC2A6AA3ED0015529B /* WorkoutList */ = {
 			isa = PBXGroup;
 			children = (
+				77EE0E2D2A73A181009F5E91 /* TestViewController.swift */,
 				77C0D2D52A6AA0920015529B /* WorkoutListViewController.swift */,
 				77E367BF2A6BB2D700DD0E76 /* ExerciseListViewController.swift */,
 				77E367C12A6BB4A500DD0E76 /* NewWorkoutViewController.swift */,
@@ -202,8 +208,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77EE0E302A73C4EE009F5E91 /* Mok.swift in Sources */,
 				77E367C22A6BB4A500DD0E76 /* NewWorkoutViewController.swift in Sources */,
 				77E367C02A6BB2D700DD0E76 /* ExerciseListViewController.swift in Sources */,
+				77EE0E2E2A73A181009F5E91 /* TestViewController.swift in Sources */,
 				77C0D2D62A6AA0920015529B /* WorkoutListViewController.swift in Sources */,
 				77C0D2DC2A6AA0920015529B /* FitnessNotebookApp.xcdatamodeld in Sources */,
 				77C0D2D22A6AA0920015529B /* AppDelegate.swift in Sources */,
@@ -356,7 +364,7 @@
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -389,7 +397,7 @@
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

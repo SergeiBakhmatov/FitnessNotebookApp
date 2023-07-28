@@ -17,7 +17,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
-        window?.rootViewController = UINavigationController(rootViewController: WorkoutListViewController())
+        window?.rootViewController = UINavigationController(rootViewController: TestViewController())
         
         return true
     }
