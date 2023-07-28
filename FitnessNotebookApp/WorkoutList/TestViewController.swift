@@ -8,17 +8,7 @@
 import UIKit
 
 class TestViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        workouts.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.backgroundColor = .blue
-        return cell
-    }
-    
-    
+        
     let workouts = Workout.fetchWorkouts()
     
     
@@ -62,7 +52,15 @@ class TestViewController: UIViewController, UITableViewDataSource, UITableViewDe
         setConstraints()
     }
     
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        workouts.count
+    }
     
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.backgroundColor = .blue
+        return cell
+    }
     
     func setupNavBar() {
         title = "Workout List"
