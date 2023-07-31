@@ -46,7 +46,7 @@ class TestViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemBrown
+        view.backgroundColor = .white
         setupNavBar()
         setupSubviews(calendarView, workoutList)
         setConstraints()
