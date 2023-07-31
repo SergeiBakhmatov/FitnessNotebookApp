@@ -3,7 +3,7 @@
 //  FitnessNotebookApp
 //
 //  Created by Sergei Bakhmatov on 28.07.2023.
-//1
+//
 
 import UIKit
 
